@@ -15,6 +15,7 @@ import Login from  './components/Login.vue';
 import Inicio from  './components/Inicio.vue';
 import Ajustes from   './components/Ajustes.vue';
 import Salir from './components/Salir.vue';
+import Imagen  from './components/Imagen.vue';
 
 const sidebarExpanded = ref(false);
 const currentSection = ref('perfil');
@@ -26,8 +27,6 @@ const toggleSidebar = () => {
 const showSection = (sectionId) => {
   currentSection.value = sectionId;
 };
-
-
 </script>
 
 
@@ -81,6 +80,8 @@ const showSection = (sectionId) => {
         </ContenedorPadreSalir>
       </nav>
 
+      <Imagen/>
+      
     </div>
 
     <!-- Main Content -->
