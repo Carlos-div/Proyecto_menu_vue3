@@ -1,0 +1,59 @@
+/*@import './base.css';*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .gradient-gold{
+      @apply bg-gradient-to-b from-[#AB8B27] to-black text-white h-full w-16;
+      transition: all 0.9s ease-in-out;
+  }
+}
+@layer components{
+  .submenus {
+    @apply bg-[#1f2937] block border border-gray-300 mt-2 rounded-md shadow-lg w-48 z-50;
+    display: block;
+  }
+}
+.rouFull {
+border-top-right-radius: 9999px;
+border-bottom-right-radius: 9999px;
+ease-in: duration-700;
+}
+.sidebar-link {
+  display: flex;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: background-color 0s ease;
+  font-size: 1.25rem;
+}
+.sidebar-link:hover {
+  background-color: #AB8B27;
+  margin-right: 70px;
+  padding: 0.125rem 0.75rem;
+}
+.centered-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 4rem); /*No es tailwind*/
+}
+.login-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+#inicio {
+  @apply bg-cover bg-center p-5 rounded-lg shadow-lg;
+  background-image: url('/images/cusaem.jpg');
+}
+.header {
+  @apply py-2 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500;
+}
