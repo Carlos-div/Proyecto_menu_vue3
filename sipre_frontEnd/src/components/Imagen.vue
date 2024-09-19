@@ -3,7 +3,7 @@
 </script>
 
 <template>
-        <div class="mt-4">
+        <div class="mt-2">
             <img src="/Imagenes/Loma.png" alt="Loma" class="w-full">
         </div>    
 </template>

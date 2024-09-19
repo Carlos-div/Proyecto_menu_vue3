@@ -33,9 +33,9 @@ const showSection = (sectionId) => {
 <template>
   <div id="app" class="flex h-screen bg-gray-60"> 
     <!-- Sidebar -->
-    <div :class="['gradient-gold rouFull', sidebarExpanded ? 'w-64' : 'w-16']">
-      <div class="flex items-center">
-        <button @click="toggleSidebar" class="p-2 transition-transform duration-700" :class="{'translate-x-48': sidebarExpanded}">
+    <div :class="['gradient-gold rounded-r-3xl', sidebarExpanded ? 'w-52' : 'w-16']">
+      <div class="flex space-between items-center">
+        <button @click="toggleSidebar" class="p-2 transition-transform duration-700" :class="{'translate-x-40': sidebarExpanded}">
           <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="black">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
           </svg>
@@ -61,7 +61,7 @@ const showSection = (sectionId) => {
           </ContenedorHijo>
         </ContenedorPadrePerfil>
         
-        <HijoMenu titulo="Ajustes" @click="showSection('ajustes')" />
+        <HijoMenu titulo="Validación oficios comisión" @click="showSection('Ajustes')" />
         
         <ContenedorPadreAjustes>
           <ContenedorHijo titulo="CONFIGURAR">
